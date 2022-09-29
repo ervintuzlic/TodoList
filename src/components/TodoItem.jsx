@@ -31,7 +31,7 @@ function TodoItem({ todo }){
 
   return (
     <div className="todoBox">
-        <input type="checkbox" checked={checked} onClick={handleCheck}/>
+        <input className="cbox" type="checkbox" checked={checked} onChange={handleCheck}/>
         <div className="title">
             {todo.title}    
         </div>

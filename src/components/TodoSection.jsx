@@ -19,10 +19,13 @@ const TodoSection = () => {
 
   return (
     <div className="todoSection">
-         {filteredTodoList.map((todo) => (
+        {filteredTodoList && filteredTodoList.length > 0 ? (
+          filteredTodoList.map((todo) => (
             <TodoItem key={todo.id} todo={todo} />
           ))
-         }
+        ) : (
+            <div><h2 style={{color:"#272727"}}>No Todo items</h2></div>
+        )}
     </div>
   )
 }

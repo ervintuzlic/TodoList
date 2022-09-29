@@ -13,7 +13,7 @@ const InputTodo = () => {
         e.preventDefault();
         
         if(title === ''){
-            alert("Enter Todo Name please");
+            alert("Enter Todo Name");
             return;
         }
 
