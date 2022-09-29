@@ -1,0 +1,101 @@
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        text-align: center;
+        font-weight: 700;
+        color: #00aeff;
+    }
+
+
+    .inputField {
+        width:100%;
+        form{
+        display:flex;
+        justify-content: center;
+        gap: 3rem;
+
+        input{
+            width:30%;
+            height: 2rem;
+            padding-left: 1rem;
+            font-size: 15px;
+        }
+        select{
+            width: 10%;
+            text-align:center;
+            font-weight: bold;
+            font-size: 15px;
+
+            option{
+                font-weight: bold;
+                font-size: 15px;
+            }
+        }
+        button{
+            width: 9%;
+            border: 2px solid #00aeff;
+            background: none;
+            font-weight: bold;
+            cursor:pointer;
+            color: #00aeff;
+            font-size: 15px;
+            transition: 0.2s ease-in-out;
+        }
+
+        button:hover {
+            color:white;
+            background: #00aeff;
+        }
+        }
+    }
+
+
+    .todoSection {
+        margin-top: 5rem;
+        width: 60%;
+        background-color: #ebebeb;
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .todoBox{
+            width:90%;
+            display:flex;
+            justify-content: space-between;
+            text-align: center;
+            padding: 1rem 0rem 1rem 0rem;
+            .title{
+                width: 30%;
+                text-align: center;
+            }
+            .status {
+                width: 30%;
+                text-align: center;
+            }
+            p{
+                width: 30%;
+                margin: 0;
+                padding: 0;
+            }
+            .deletebtn{
+                background:#ff5c2a;
+                border:none;
+                color:white;
+                width:25px;
+                height:25px;
+                cursor:pointer;
+                font-weight: 800;
+                transition: 0.2s ease-in-out;
+            }
+
+            .deletebtn:hover{
+                background: none;
+                border: 2px solid #ff5c2a;
+                color: #ff5c2a;
+            }
+        }
+    }
+}
